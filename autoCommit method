@@ -1,0 +1,20 @@
+autocommit ONLY affects statements
+
+autocommit off:
+
+insert
+update
+delete
+commit
+
+that is a single transaction.  autocommit on
+
+insert
+update
+delete
+commit
+
+is now 4 transactions.
+
+
+sqlplus always commits upon exit -- it is just they way it works.  exit and commit.
